@@ -4,7 +4,8 @@ const app = express();
 const PORT = 3000
 const mongoose = require('mongoose')
 const dotenv = require('dotenv').config();
-const fileRoutes = require('./routes/fileroutes')
+const fileRoutes = require('./routes/fileroutes');
+const multer = require('multer');
 
 app.use(express.json())
 app.use(express.static('public'))
