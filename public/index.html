@@ -8,6 +8,15 @@
 <body>
     <div class="wrap">
         <h1>File sharing</h1>
+        <form id="uploadForm">
+            <input type="file" id="fileInput" required>
+            <button type="submit" id="uploadFile">Upload File</button>
+        </form>
+        <form id="downloadForm">
+            <input type="text" id="codeInput" placeholder="code">
+            <button type="submit" id="downloadFile">Download File</button>
+        </form>
+        <p id="message"></p>
     </div>
 </body>
 </html>
