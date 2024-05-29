@@ -4,9 +4,12 @@ const app = express();
 const PORT = 3000
 const mongoose = require('mongoose')
 const dotenv = require('dotenv').config();
-app.use(express.json())
 
+app.use(express.json())
 app.use(express.static('public'))
+app.use('/uploads', express.static('uploads'))
+
+
 app.get('/', (req, res)=>{
     res.sendFile(__dirname, 'public', 'index.html')
 })
