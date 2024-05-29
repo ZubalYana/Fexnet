@@ -32,4 +32,16 @@ router.post('/upload', upload.single('file'), async (req,res)=>{
     }
 })
 
+
+router.get('/download/:code', async (req, res)=>{
+    try{
+        const file = await File.findOne({code: req.params.code});
+        if(!file){
+            return res.sendStatus(404).json({message: 'File not found'})
+        }
+        res.download(`/uploads/${file.filename}`, file.originalname);
+    }catch(err){
+        res.sendStatus(201).json({message: err})
+    }
+})
 module.exports = router;
