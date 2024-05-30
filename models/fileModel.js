@@ -1,22 +1,22 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 const fileSchema = new mongoose.Schema({
-    filename:{
-        type:String,
+    filename: {
+        type: String,
         required: true
     },
-    originalname:{
-        type:String,
-        required: true
+    originalName: {
+        type: String,
+        require: true
     },
-    code:{
-        type:String,
-        required: true,
+    code: {
+        type: String,
+        require: true,
         unique: true
     },
-    uploaded:{
-        type:Date,
-        default: Date.now(),
-    },
-})
-const file = mongoose.model('File', fileSchema)
-module.exports = file;
+    uploadDate: {
+        type: Date,
+        defaul: Date.now
+    }
+});
+const File = mongoose.model('File', fileSchema)
+module.exports = File;

@@ -1,25 +1,26 @@
 const express = require('express');
-const path = require('path');
-const app = express();
-const PORT = 3000
-const mongoose = require('mongoose')
-const dotenv = require('dotenv').config();
+const mongoose = require('mongoose');
+const dotenv = require('dotenv');
 const fileRoutes = require('./routes/fileroutes');
-const multer = require('multer');
+const path = require('path');
 
-app.use(express.json())
-app.use(express.static('public'))
-app.use('/uploads', express.static('uploads'))
-app.use('/api', fileRoutes)
-mongoose.connect(process.env.MONGODB_URI)
-.then(()=>{
-    console.log(`Connected to MongoDB`)
-})
+dotenv.config();
 
+const app = express();
 
-app.get('/', (req, res)=>{
-    res.sendFile(__dirname, 'public', 'index.html')
+mongoose.connect(process.env.MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
 })
-app.listen(PORT, ()=>{
-    console.log(`Server runs on PORT: ${PORT}`)
-})
+    .then(() => console.log('Connected to MongoDB'))
+    .catch(err => console.error('Could not connect to MongoDB', err));
+
+app.use(express.json());
+app.use('/uploads', express.static('uploads'));
+app.use('/api', fileRoutes);
+app.use(express.static('public'));
+
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
+});

@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.js' integrity='sha512-vHNHepeQWwAggJlhEk932jRS5sNdn/Nn4F+w4TpXW5dA+04qnd3e7YpfXo6auWhFG6z3FVhmScG4ovtF+qYeZw==' crossorigin='anonymous'></script>
 </head>
 <body>
     <div class="wrap">
-        <h1>File sharing</h1>
+        <h1>File sharing App</h1>
         <form id="uploadForm">
             <input type="file" id="fileInput" required>
-            <button type="submit" id="uploadFile">Upload File</button>
+            <button type="submit">Upload file</button>
         </form>
+
         <form id="downloadForm">
-            <input type="text" id="codeInput" placeholder="code">
-            <button type="submit" id="downloadFile">Download File</button>
+            <input type="text" id="codeInput" placeholder="CODE">
+            <button type="submit">Download</button>
         </form>
         <p id="message"></p>
     </div>
+    <script src="./main.js"></script>
 </body>
 </html>
