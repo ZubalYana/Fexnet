@@ -6,16 +6,28 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
     <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.js' integrity='sha512-vHNHepeQWwAggJlhEk932jRS5sNdn/Nn4F+w4TpXW5dA+04qnd3e7YpfXo6auWhFG6z3FVhmScG4ovtF+qYeZw==' crossorigin='anonymous'></script>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="wrap">
-        <h1>File sharing App</h1>
+        <header>
+            <div class="logo"></div>
+            <div class="languageThemeCon">
+                <select id="languageChanger">
+                    <option value="Eng">Eng.</option>
+                    <option value="Ukr">Ukr.</option>
+                    <option value="Ukr">Fr.</option>
+                </select>
+                <div class="themeChanger">
+                    <div class="themeChanger_circle"></div>
+                </div>
+            </div>
+        </header>
+
         <form id="uploadForm">
             <input type="file" id="fileInput" required>
             <button type="submit">Upload file</button>
         </form>
-
         <form id="downloadForm">
             <input type="text" id="codeInput" placeholder="CODE">
             <button type="submit">Download</button>
