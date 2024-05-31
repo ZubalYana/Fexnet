@@ -1,1 +1,48 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #332C39;
+}
+
+.wrap {
+  padding: 40px;
+}
+.wrap header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrap header .logo {
+  font-family: Audiowide;
+  font-size: 24px;
+}
+.wrap header .languageThemeCon {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.wrap header #languageChanger {
+  border: none;
+  outline: none;
+  font-family: Oxygen;
+  font-size: 20px;
+  font-weight: 400;
+}
+.wrap header .themeChanger {
+  width: 46px;
+  height: 23px;
+  border-radius: 20px;
+  background-color: #332C39;
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.wrap header .themeChanger .themeChanger_circle {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  border: 2px #332C39 solid;
+  background-color: #068FFF;
+}/*# sourceMappingURL=style.css.map */
