@@ -6,6 +6,9 @@
 }
 .wrap{
     padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     header{
         width: 100%;
         display: flex;
@@ -42,6 +45,30 @@
                 border: 2px #332C39 solid;
                 background-color: #068FFF;
             }
+        }
+    }
+    .info{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        .title{
+            font-family: Audiowide;
+            font-size: 48px;
+        }
+        .underline{
+            width: 312px;
+            height: 2px;
+            background-color: #4E4FEB;
+            border-radius: 5px;
+        }
+        .subtitle{
+            font-family: Oxygen;
+            font-size: 16px;
+            width: 539px;
+            font-weight: 300;
+            margin-top: 18px;
         }
     }
 }
