@@ -120,4 +120,9 @@
 .wrap .forms #uploadForm #message {
   color: red;
   margin-top: 10px;
+}
+.wrap .forms #uploadForm #fileName {
+  display: inline-block;
+  margin-left: 10px;
+  font-style: italic;
 }/*# sourceMappingURL=style.css.map */

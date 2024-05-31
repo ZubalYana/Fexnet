@@ -1,3 +1,11 @@
+document.querySelector('#fileInput').addEventListener('change', function() {
+    const fileNameSpan = document.querySelector('#fileName');
+    if (this.files && this.files.length > 0) {
+        fileNameSpan.textContent = this.files[0].name;
+    } else {
+        fileNameSpan.textContent = 'No file chosen';
+    }
+});
 
 
 document.getElementById('uploadForm').addEventListener('submit', async (e) => {
@@ -39,3 +47,4 @@ document.getElementById('downloadForm').addEventListener('submit', async (e) => 
         console.error('Error downloading file', error);
         document.getElementById('message').innerText = 'Error downloading file';
     }})
+
