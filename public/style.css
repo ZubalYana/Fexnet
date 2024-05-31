@@ -92,7 +92,7 @@
   padding: 40px;
 }
 .wrap .forms #uploadForm #fileInput {
-  display: none; /* Hide the original file input */
+  display: none;
 }
 .wrap .forms #uploadForm .custom-file-label {
   width: 177px;
@@ -137,4 +137,29 @@
   display: inline-block;
   margin-left: 10px;
   font-style: italic;
+}
+.wrap .forms #downloadForm .downloadForm_icon {
+  width: 177px;
+  height: 177px;
+  border-radius: 50%;
+  border: 2px solid #068FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 90px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s ease;
+  color: #068FFF;
+}
+.wrap .forms #downloadForm .downloadForm_icon:hover {
+  background-color: #068FFF;
+  color: #fff;
+}
+.wrap .forms #downloadForm .downloadForm_icon .cloud {
+  color: #068FFF;
+  transition: 0.3s ease;
+}
+.wrap .forms #downloadForm .downloadForm_icon:hover .cloud {
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
