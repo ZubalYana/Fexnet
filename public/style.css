@@ -50,7 +50,7 @@
   background-color: #068FFF;
 }
 .wrap .info {
-  margin-top: 30px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,4 +72,52 @@
   width: 539px;
   font-weight: 300;
   margin-top: 18px;
+}
+.wrap .forms {
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.wrap .forms form {
+  width: 490px;
+  height: 415px;
+  border-radius: 20px;
+  border: 1px #332C39 solid;
+}
+.wrap .forms #uploadForm #fileInput {
+  display: none; /* Hide the original file input */
+}
+.wrap .forms #uploadForm .custom-file-label {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+.wrap .forms #uploadForm .custom-file-label:hover {
+  background-color: #e0e0e0;
+}
+.wrap .forms #uploadForm button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.wrap .forms #uploadForm button:hover {
+  background-color: #45a049;
+}
+.wrap .forms #uploadForm #codeInput {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: calc(100% - 22px); /* Full width minus padding and border */
+}
+.wrap .forms #uploadForm #message {
+  color: red;
+  margin-top: 10px;
 }/*# sourceMappingURL=style.css.map */
