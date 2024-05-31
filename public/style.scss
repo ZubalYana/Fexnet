@@ -91,13 +91,17 @@
             flex-direction: column;
             align-items: center;
             padding: 40px;
+            font-family: Oxygen;
+
         }
         #uploadForm{
-
             #fileInput {
                 display: none;
             }
-            
+            h3{
+                font-size: 24px;
+                font-weight: 700;
+            }
             .custom-file-label {
                 width: 177px;
                 height: 177px;
@@ -150,6 +154,10 @@
             }
         }
         #downloadForm{
+            h3{
+                font-size: 24px;
+                font-weight: 700;
+            }
             .downloadForm_icon {
                 width: 177px;
                 height: 177px;
