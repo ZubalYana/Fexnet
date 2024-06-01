@@ -146,20 +146,37 @@
             }
 
             .fileInputCon{
-                width: 200px;
+                width: 280px;
                 display: flex;
-                span{}
+                justify-content: space-between;
+                margin-top: 15px;
+                align-items: center;
+                span{
+                    font-size: 16px;
+                    font-weight: 600;
+                    font-family: Oxygen;
+                }
                 button {
-                    padding: 10px 20px;
-                    border: none;
-                    background-color: #4CAF50;
-                    color: white;
+                    width: 130px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: Oxygen;
+                    font-size: 16px;
+                    font-weight: 700;
+                    background-color: #fff;
+                    color: #332C39;
+                    border: 1px #332C39 solid;
                     cursor: pointer;
                     border-radius: 4px;
+                    transition: 0.3s ease;
                 }
                 
                 button:hover {
-                    background-color: #45a049;
+                    background-color: #332C39;
+                    color: #fff;
+
                 }
             }
             
