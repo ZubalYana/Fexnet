@@ -122,14 +122,14 @@
   color: #4E4FEB;
 }
 .wrap .forms #uploadForm .custom-file-label {
-  width: 177px;
-  height: 177px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   border: 2px solid #4E4FEB;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 90px;
+  font-size: 80px;
   color: #4E4FEB;
   cursor: pointer;
   font-weight: 500;
@@ -194,14 +194,14 @@
   color: #068FFF;
 }
 .wrap .forms #downloadForm .downloadForm_icon {
-  width: 177px;
-  height: 177px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   border: 2px solid #068FFF;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 90px;
+  font-size: 80px;
   cursor: pointer;
   font-weight: 500;
   transition: 0.3s ease;
