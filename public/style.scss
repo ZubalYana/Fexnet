@@ -102,6 +102,18 @@
                 font-size: 24px;
                 font-weight: 700;
             }
+            p{
+                width: 363px;
+                font-family: Oxygen;
+                font-size: 16px;
+                font-weight: 300;
+                text-align: center;
+                margin-top: 10px;
+                .keyWords{
+                    font-weight: 400;
+                    color: #4E4FEB;
+                }
+            }
             .custom-file-label {
                 width: 177px;
                 height: 177px;
@@ -115,6 +127,8 @@
                 cursor: pointer;
                 font-weight: 500;
                 transition: 0.3s ease;
+                margin-bottom: 10px;
+
             }
             
             .custom-file-label:hover {
@@ -180,6 +194,8 @@
                 font-weight: 500;
                 transition: 0.3s ease;
                 color: #068FFF;
+                margin-bottom: 10px;
+
             }
             
             .downloadForm_icon:hover {

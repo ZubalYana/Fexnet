@@ -109,6 +109,18 @@
   font-size: 24px;
   font-weight: 700;
 }
+.wrap .forms #uploadForm p {
+  width: 363px;
+  font-family: Oxygen;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 10px;
+}
+.wrap .forms #uploadForm p .keyWords {
+  font-weight: 400;
+  color: #4E4FEB;
+}
 .wrap .forms #uploadForm .custom-file-label {
   width: 177px;
   height: 177px;
@@ -122,6 +134,7 @@
   cursor: pointer;
   font-weight: 500;
   transition: 0.3s ease;
+  margin-bottom: 10px;
 }
 .wrap .forms #uploadForm .custom-file-label:hover {
   background-color: #4E4FEB;
@@ -177,6 +190,7 @@
   font-weight: 500;
   transition: 0.3s ease;
   color: #068FFF;
+  margin-bottom: 10px;
 }
 .wrap .forms #downloadForm .downloadForm_icon:hover {
   background-color: #068FFF;
