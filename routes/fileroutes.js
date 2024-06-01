@@ -27,7 +27,7 @@ router.post('/upload', upload.single('file'), async (req, res) => {
         })
 
         await newFile.save();
-        res.status(201).json({ message: `File uploaded successfully ${code}` });
+        res.status(201).json({ message: `File uploaded successfully, code:${code}` });
     } catch (err) {
         res.status(500).json({ message: err })
     }

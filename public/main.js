@@ -17,7 +17,8 @@ document.getElementById('uploadForm').addEventListener('submit', async (e) => {
     try {
         const res = await axios.post('/api/upload', formData);
         console.log(res);
-        document.getElementById('UploadMessage').innerText = 'File uploaded successfully';
+        const message = res.data.message;
+        document.getElementById('UploadMessage').innerText = message;
     } catch (error) {
         console.error('Error uploading file', error);
         document.getElementById('UploadMessage').innerText = 'Error uploading file';
