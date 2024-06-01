@@ -1,3 +1,4 @@
+//file sending from the input
 document.querySelector('#fileInput').addEventListener('change', function() {
     const fileNameSpan = document.querySelector('#fileName');
     if (this.files && this.files.length > 0) {
@@ -7,7 +8,7 @@ document.querySelector('#fileInput').addEventListener('change', function() {
     }
 });
 
-
+//file uploading
 document.getElementById('uploadForm').addEventListener('submit', async (e) => {
     e.preventDefault();
     const fileInput = document.getElementById('fileInput');
@@ -25,6 +26,7 @@ document.getElementById('uploadForm').addEventListener('submit', async (e) => {
     }
 });
 
+//file downloading
 document.getElementById('downloadForm').addEventListener('submit', async (e) => {
     e.preventDefault();
     const code = document.getElementById('codeInput').value;
@@ -47,5 +49,5 @@ document.getElementById('downloadForm').addEventListener('submit', async (e) => 
     } catch (error) {
         console.error('Error downloading file', error);
         document.getElementById('message').innerText = 'Error downloading file';
-    }})
+}})
 
