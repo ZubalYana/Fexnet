@@ -1,0 +1,13 @@
+@media screen and (max-device-width: 430px) {
+    .wrap{
+        header{
+            width: 100%;
+            .languageThemeCon{
+                display: none;
+            }
+            .burger{
+                display: flex;
+            }
+        }
+    }
+}

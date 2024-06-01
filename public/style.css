@@ -38,14 +38,14 @@
   display: flex;
   justify-content: space-between;
 }
-.wrap header #languageChanger {
+.wrap header .languageThemeCon #languageChanger {
   border: none;
   outline: none;
   font-family: Oxygen;
   font-size: 20px;
   font-weight: 400;
 }
-.wrap header .themeChanger {
+.wrap header .languageThemeCon .themeChanger {
   width: 55px;
   height: 30px;
   border-radius: 20px;
@@ -54,12 +54,26 @@
   justify-content: flex-start;
   cursor: pointer;
 }
-.wrap header .themeChanger .themeChanger_circle {
+.wrap header .languageThemeCon .themeChanger .themeChanger_circle {
   width: 30px;
   height: 30px;
   border-radius: 50%;
   border: 2px #332C39 solid;
   background-color: #068FFF;
+}
+.wrap header .burger {
+  width: 40px;
+  height: 26px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.wrap header .burger .burger_row {
+  width: 100%;
+  height: 2px;
+  border-radius: 5px;
+  background-color: #332C39;
 }
 .wrap .info {
   margin-top: 10px;
