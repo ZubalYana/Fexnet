@@ -105,6 +105,29 @@ function changeTheme(theme){
                 });
             }
         );   
+
+        $('.downloadForm_icon').css('border', '2px solid #068FFF')
+        $('.downloadForm_icon').css('background-color', '#fff')
+        $('.cloud').css('color', '#068FFF')
+        $('.downloadForm_icon').hover(
+            () => {
+                $('.downloadForm_icon').css({
+                    'background-color': '#068FFF',
+                });
+                $('.cloud').css({
+                    'color': '#fff',
+                });
+            },
+            () => {
+                $('.downloadForm_icon').css({
+                    'background-color': '#fff',
+                    'color': '#068FFF',
+                });
+                $('.cloud').css({
+                    'color': '#068FFF',
+                });
+            }
+        );   
     }else{
         $('.themeChanger').css('justify-content', 'flex-end')
         $('.themeChanger').css('background-color', '#fff')
@@ -144,6 +167,29 @@ function changeTheme(theme){
                 });
             }
         );   
+
+        $('.downloadForm_icon').css('border', '2px solid #34A4FF')
+        $('.downloadForm_icon').css('background-color', '#332C39')
+        $('.cloud').css('color', '#34A4FF')
+        $('.downloadForm_icon').hover(
+            () => {
+                $('.downloadForm_icon').css({
+                    'background-color': '#34A4FF',
+                });
+                $('.cloud').css({
+                    'color': '#332C39',
+                });
+            },
+            () => {
+                $('.downloadForm_icon').css({
+                    'background-color': '#332C39',
+                    'color': '#34A4FF',
+                });
+                $('.cloud').css({
+                    'color': '#34A4FF',
+                });
+            }
+        );  
     }
 }
 changeTheme(theme);
