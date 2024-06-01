@@ -13,9 +13,11 @@
   }
   .wrap .info {
     width: 100%;
+    margin-top: 20px;
   }
   .wrap .info .subtitle {
     width: 400px;
+    font-size: 14px;
   }
   .wrap .forms {
     width: 100%;
