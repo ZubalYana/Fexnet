@@ -141,22 +141,29 @@
                 transition: 0.3s ease;
             }
             
-            .plus:hover {
+            .custom-file-label:hover .plus{
                 color: #fff;
             }
-            
-            button {
-                padding: 10px 20px;
-                border: none;
-                background-color: #4CAF50;
-                color: white;
-                cursor: pointer;
-                border-radius: 4px;
+
+            .fileInputCon{
+                width: 200px;
+                display: flex;
+                span{}
+                button {
+                    padding: 10px 20px;
+                    border: none;
+                    background-color: #4CAF50;
+                    color: white;
+                    cursor: pointer;
+                    border-radius: 4px;
+                }
+                
+                button:hover {
+                    background-color: #45a049;
+                }
             }
             
-            button:hover {
-                background-color: #45a049;
-            }
+
             
             #codeInput {
                 padding: 10px;

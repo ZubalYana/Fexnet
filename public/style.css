@@ -144,10 +144,14 @@
   color: #4E4FEB;
   transition: 0.3s ease;
 }
-.wrap .forms #uploadForm .plus:hover {
+.wrap .forms #uploadForm .custom-file-label:hover .plus {
   color: #fff;
 }
-.wrap .forms #uploadForm button {
+.wrap .forms #uploadForm .fileInputCon {
+  width: 200px;
+  display: flex;
+}
+.wrap .forms #uploadForm .fileInputCon button {
   padding: 10px 20px;
   border: none;
   background-color: #4CAF50;
@@ -155,7 +159,7 @@
   cursor: pointer;
   border-radius: 4px;
 }
-.wrap .forms #uploadForm button:hover {
+.wrap .forms #uploadForm .fileInputCon button:hover {
   background-color: #45a049;
 }
 .wrap .forms #uploadForm #codeInput {
