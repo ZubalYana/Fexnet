@@ -78,21 +78,30 @@ function changeTheme(theme){
         $('.title').css('color', '#332C39')
         $('.subtitle').css('color', '#332C39')
         $('.underline').css('background-color', '#4E4FEB')
+        $('form').css('border', '1px #332C39 solid')
+        $('p').css('color', '#332C39')
+        $('.uploadForm_keyWords').css('color', '#4E4FEB')
+        $('h3').css('color', '#4E4FEB')
 
-        $('#buyBtn').css('background-color', '#fff')
-        $('#buyBtn').css('border', '1px #081323 solid')
-        $('#buyBtn').css('color', '#081323')
-        $('#buyBtn').hover(
+        $('.custom-file-label').css('border', '2px solid #4E4FEB')
+        $('.custom-file-label').css('background-color', '#fff')
+        $('.plus').css('color', '#4E4FEB')
+        $('.custom-file-label').hover(
             () => {
-                $('#buyBtn').css({
-                    'background-color': '#081323',
+                $('.custom-file-label').css({
+                    'background-color': '#4E4FEB',
+                });
+                $('.plus').css({
                     'color': '#fff',
                 });
             },
             () => {
-                $('#buyBtn').css({
+                $('.custom-file-label').css({
                     'background-color': '#fff',
-                    'color': '#081323',
+                    'color': '#4E4FEB',
+                });
+                $('.plus').css({
+                    'color': '#4E4FEB',
                 });
             }
         );   
@@ -108,21 +117,30 @@ function changeTheme(theme){
         $('.title').css('color', '#fff')
         $('.subtitle').css('color', '#fff')
         $('.underline').css('background-color', '#8283FA')
+        $('form').css('border', '1px #fff solid')
+        $('p').css('color', '#fff')
+        $('.uploadForm_keyWords').css('color', '#8283FA')
+        $('h3').css('color', '#fff')
 
-        $('#buyBtn').css('background-color', '#fff')
-        $('#buyBtn').css('border', '1px #081323 solid')
-        $('#buyBtn').css('color', '#081323')
-        $('#buyBtn').hover(
+        $('.custom-file-label').css('border', '2px solid #8283FA')
+        $('.custom-file-label').css('background-color', '#332C39')
+        $('.plus').css('color', '#8283FA')
+        $('.custom-file-label').hover(
             () => {
-                $('#buyBtn').css({
-                    'background-color': '#081323',
-                    'color': '#fff',
+                $('.custom-file-label').css({
+                    'background-color': '#8283FA',
+                });
+                $('.plus').css({
+                    'color': '#332C39',
                 });
             },
             () => {
-                $('#buyBtn').css({
-                    'background-color': '#fff',
-                    'color': '#081323',
+                $('.custom-file-label').css({
+                    'background-color': '#332C39',
+                    'color': '#8283FA',
+                });
+                $('.plus').css({
+                    'color': '#8283FA',
                 });
             }
         );   
