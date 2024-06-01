@@ -82,6 +82,7 @@ function changeTheme(theme){
         $('p').css('color', '#332C39')
         $('.uploadForm_keyWords').css('color', '#4E4FEB')
         $('h3').css('color', '#332C39')
+        $('#fileName').css('color', '#332C39')
 
         $('.custom-file-label').css('border', '2px solid #4E4FEB')
         $('.custom-file-label').css('background-color', '#fff')
@@ -104,8 +105,7 @@ function changeTheme(theme){
                     'color': '#4E4FEB',
                 });
             }
-        );   
-
+        ); 
         $('.downloadForm_icon').css('border', '2px solid #068FFF')
         $('.downloadForm_icon').css('background-color', '#fff')
         $('.cloud').css('color', '#068FFF')
@@ -128,6 +128,42 @@ function changeTheme(theme){
                 });
             }
         );   
+        $('.uploadFile').css('border', '1px #332C39 solid')
+        $('.uploadFile').css('background-color', '#fff')
+        $('.uploadFile').css('color', '#332C39')
+        $('.uploadFile').hover(
+            () => {
+                $('.uploadFile').css({
+                    'background-color': '#332C39',
+                    'color': '#fff',
+                });
+            },
+            () => {
+                $('.uploadFile').css({
+                    'background-color': '#fff',
+                    'color': '#332C39',
+                });
+            }
+        );
+
+        $('.saveFile').css('border', '1px #332C39 solid')
+        $('.saveFile').css('background-color', '#fff')
+        $('.saveFile').css('color', '#332C39')
+        $('.saveFile').hover(
+            () => {
+                $('.saveFile').css({
+                    'background-color': '#332C39',
+                    'color': '#fff',
+                });
+            },
+            () => {
+                $('.saveFile').css({
+                    'background-color': '#fff',
+                    'color': '#332C39',
+                });
+            }
+        );
+
     }else{
         $('.themeChanger').css('justify-content', 'flex-end')
         $('.themeChanger').css('background-color', '#fff')
@@ -144,6 +180,7 @@ function changeTheme(theme){
         $('p').css('color', '#fff')
         $('.uploadForm_keyWords').css('color', '#8283FA')
         $('h3').css('color', '#fff')
+        $('#fileName').css('color', '#fff')
 
         $('.custom-file-label').css('border', '2px solid #8283FA')
         $('.custom-file-label').css('background-color', '#332C39')
@@ -190,6 +227,42 @@ function changeTheme(theme){
                 });
             }
         );  
+
+        $('.uploadFile').css('border', '1px #fff solid')
+        $('.uploadFile').css('background-color', '#332C39')
+        $('.uploadFile').css('color', '#fff')
+        $('.uploadFile').hover(
+            () => {
+                $('.uploadFile').css({
+                    'background-color': '#fff',
+                    'color': '#332C39',
+                });
+            },
+            () => {
+                $('.uploadFile').css({
+                    'background-color': '#332C39',
+                    'color': '#fff',
+                });
+            }
+        );
+
+        $('.saveFile').css('border', '1px #fff solid')
+        $('.saveFile').css('background-color', '#332C39')
+        $('.saveFile').css('color', '#fff')
+        $('.saveFile').hover(
+            () => {
+                $('.saveFile').css({
+                    'background-color': '#fff',
+                    'color': '#332C39',
+                });
+            },
+            () => {
+                $('.saveFile').css({
+                    'background-color': '#332C39',
+                    'color': '#fff',
+                });
+            }
+        );
     }
 }
 changeTheme(theme);
