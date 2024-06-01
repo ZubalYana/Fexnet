@@ -99,7 +99,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px;
+  padding: 30px;
   font-family: Oxygen;
 }
 .wrap .forms #uploadForm #fileInput {
@@ -227,6 +227,7 @@
 }
 .wrap .forms #downloadForm .codeInputBtnCon {
   width: 250px;
+  height: 50px;
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
@@ -272,4 +273,9 @@
 }
 .wrap .forms #downloadForm .downloadForm_icon:hover .cloud {
   color: #fff;
+}
+.wrap .forms #downloadForm #message {
+  margin-top: 15px;
+  font-family: Oxygen;
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */
