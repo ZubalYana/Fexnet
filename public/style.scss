@@ -130,21 +130,17 @@
                 margin-bottom: 10px;
 
             }
-            
             .custom-file-label:hover {
                 background-color: #4E4FEB;
                 color: #fff;
             }
-            
             .plus {
                 color: #4E4FEB;
                 transition: 0.3s ease;
             }
-            
             .custom-file-label:hover .plus{
                 color: #fff;
             }
-
             .fileInputCon{
                 width: 280px;
                 display: flex;
@@ -179,25 +175,21 @@
 
                 }
             }
-            
-
-            
             #codeInput {
                 padding: 10px;
                 border: 1px solid #ccc;
                 border-radius: 4px;
                 width: calc(100% - 22px); /* Full width minus padding and border */
             }
-            
-            #message {
-                color: red;
-                margin-top: 10px;
-            }
-            
             #fileName {
                 display: inline-block;
                 margin-left: 10px;
                 font-style: italic;
+            }
+            #UploadMessage{
+                margin-top: 15px;
+                font-family: Oxygen;
+                font-weight: 500;
             }
         }
         #downloadForm{

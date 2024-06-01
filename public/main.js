@@ -17,10 +17,10 @@ document.getElementById('uploadForm').addEventListener('submit', async (e) => {
     try {
         const res = await axios.post('/api/upload', formData);
         console.log(res);
-        document.getElementById('message').innerText = 'File uploaded successfully';
+        document.getElementById('UploadMessage').innerText = 'File uploaded successfully';
     } catch (error) {
         console.error('Error uploading file', error);
-        document.getElementById('message').innerText = 'Error uploading file';
+        document.getElementById('UploadMessage').innerText = 'Error uploading file';
     }
 });
 
