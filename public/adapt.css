@@ -1,4 +1,7 @@
 @media screen and (max-device-width: 430px) {
+  .wrap {
+    width: 100%;
+  }
   .wrap header {
     width: 100%;
   }
@@ -7,5 +10,28 @@
   }
   .wrap header .burger {
     display: flex;
+  }
+  .wrap .info {
+    width: 100%;
+  }
+  .wrap .info .subtitle {
+    width: 400px;
+  }
+  .wrap .forms {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .wrap .forms form {
+    width: 390px;
+  }
+  .wrap .forms #uploadForm p {
+    width: 300px;
+  }
+  .wrap .forms #downloadForm {
+    margin: 40px 0;
+  }
+  .wrap .forms #downloadForm p {
+    width: 300px;
   }
 }/*# sourceMappingURL=adapt.css.map */
