@@ -81,7 +81,7 @@ function changeTheme(theme){
         $('form').css('border', '1px #332C39 solid')
         $('p').css('color', '#332C39')
         $('.uploadForm_keyWords').css('color', '#4E4FEB')
-        $('h3').css('color', '#4E4FEB')
+        $('h3').css('color', '#332C39')
 
         $('.custom-file-label').css('border', '2px solid #4E4FEB')
         $('.custom-file-label').css('background-color', '#fff')
