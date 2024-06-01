@@ -225,6 +225,43 @@
   color: #068FFF;
   margin-bottom: 10px;
 }
+.wrap .forms #downloadForm .codeInputBtnCon {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  align-items: center;
+}
+.wrap .forms #downloadForm .codeInputBtnCon input {
+  width: 90px;
+  height: 25px;
+  padding: 5px;
+  border: 1px #332C39 solid;
+  border-radius: 5px;
+  color: #332C39;
+  font-family: Oxygen;
+  letter-spacing: 6px;
+}
+.wrap .forms #downloadForm .codeInputBtnCon button {
+  width: 130px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Oxygen;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #fff;
+  color: #332C39;
+  border: 1px #332C39 solid;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
+.wrap .forms #downloadForm .codeInputBtnCon button:hover {
+  background-color: #332C39;
+  color: #fff;
+}
 .wrap .forms #downloadForm .downloadForm_icon:hover {
   background-color: #068FFF;
   color: #fff;
