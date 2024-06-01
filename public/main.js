@@ -72,6 +72,10 @@ function changeTheme(theme){
         $('.themeChanger_circle').css('background-color', '#068FFF')
         $('.themeChanger_circle').css('border', '2px #332C39 solid')
         $('.wrap').css('background-color', '#fff')
+        $('select').css('background-color', '#fff')
+        $('select').css('color', '#332C39')
+        $('.logo').css('color', '#332C39')
+
         $('#buyBtn').css('background-color', '#fff')
         $('#buyBtn').css('border', '1px #081323 solid')
         $('#buyBtn').css('color', '#081323')
@@ -95,6 +99,11 @@ function changeTheme(theme){
         $('.themeChanger_circle').css('background-color', '#068FFF')
         $('.themeChanger_circle').css('border', '2px #fff solid')
         $('.wrap').css('background-color', '#332C39')
+        $('select').css('background-color', '#332C39')
+        $('select').css('color', '#fff')
+        $('.logo').css('color', '#fff')
+
+
         $('#buyBtn').css('background-color', '#fff')
         $('#buyBtn').css('border', '1px #081323 solid')
         $('#buyBtn').css('color', '#081323')
