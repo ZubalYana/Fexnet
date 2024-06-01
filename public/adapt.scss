@@ -1,6 +1,7 @@
 @media screen and (max-device-width: 430px) {
     .wrap{
         width: 100%;
+        padding: 20px;
         header{
             width: 100%;
             .languageThemeCon{
@@ -13,8 +14,11 @@
         .info{
             width: 100%;
             margin-top: 20px;
+            .title{
+                font-size: 40px;
+            }
             .subtitle{
-                width: 400px;
+                width: 370px;
                 font-size: 14px;
             }
         }
