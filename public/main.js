@@ -305,6 +305,7 @@ function changeLanguage() {
     localStorage.setItem('lang', lang); 
 
     updateLanguage();
+    $('#languageChanger').val(lang);
 
 }
 $('#languageChanger').change(function() {
@@ -314,16 +315,16 @@ $('#languageChanger').change(function() {
         case 'en':
             lang = 'en';
             break;
-        case 'Ukr':
+        case 'ukraine':
             lang = 'ukraine';
             break;
-        case 'Jap':
+        case 'japan':
             lang = 'japan';
             break;
-        case 'Fr':
+        case 'france':
             lang = 'france';
             break;
-        case 'Pol':
+        case 'poland':
             lang = 'poland';
             break;
         default:
