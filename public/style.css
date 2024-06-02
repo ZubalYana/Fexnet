@@ -86,11 +86,16 @@
   font-family: Audiowide;
   font-size: 48px;
 }
-.wrap .info .underline {
+.wrap .info .underline_container {
   width: 312px;
+  height: 2px;
+}
+.wrap .info .underline_container .underline {
+  width: 0px;
   height: 2px;
   background-color: #4E4FEB;
   border-radius: 5px;
+  transition: 1s ease;
 }
 .wrap .info .subtitle {
   font-family: Oxygen;

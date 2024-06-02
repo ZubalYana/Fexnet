@@ -1,3 +1,7 @@
+//underline animation
+$(document).ready(function(){
+    $('.underline').css('width', '100%')
+})
 //file sending from the input
 document.querySelector('#fileInput').addEventListener('change', function() {
     const fileNameSpan = document.querySelector('#fileName');
