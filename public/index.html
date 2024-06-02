@@ -44,11 +44,11 @@
             <form id="uploadForm">
                 <input type="file" id="fileInput" required>
                 <label for="fileInput" class="custom-file-label"><i class="fa-solid fa-plus plus"></i></label>
-                <h3>Upload a file</h3>
-                <p>Here you can <span class="keyWords uploadForm_keyWords">upload</span> your files. They will be saved in our database for <span class="keyWords uploadForm_keyWords">one week</span>.</p>
+                <h3 class="language-upload">Upload a file</h3>
+                <p class="language-uploadDescription">Here you can <span class="keyWords uploadForm_keyWords">upload</span> your files. They will be saved in our database for <span class="keyWords uploadForm_keyWords">one week</span>.</p>
                 <div class="fileInputCon">
-                    <span id="fileName">No file chosen</span>
-                    <button type="submit" class="uploadFile">Upload file</button>
+                    <span id="fileName" class="language-file">No file chosen</span>
+                    <button type="submit" class="uploadFile language-uploadFile">Upload file</button>
                 </div>
                 <p id="UploadMessage"></p>
 
@@ -56,11 +56,11 @@
             </form>
             <form id="downloadForm">
                 <div class="downloadForm_icon"><i class="fa-solid fa-cloud-arrow-down cloud"></i></div>
-                <h3>Save a file</h3>
-                <p>Save <span class="keyWords">any file</span> from the database by just entering the 6-number <span class="keyWords">code</span> here!</p>
+                <h3 class="language-save">Save a file</h3>
+                <p class="language-saveDescription">Save <span class="keyWords">any file</span> from the database by just entering the 6-number <span class="keyWords">code</span> here!</p>
                 <div class="codeInputBtnCon">
                     <input type="text" id="codeInput" placeholder="XXXXXX">
-                    <button type="submit" class="saveFile">Save file</button>
+                    <button type="submit" class="saveFile language-saveFile">Save file</button>
                 </div>
 
                 <p id="message"></p>

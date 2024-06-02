@@ -276,23 +276,77 @@ function changeTheme(theme){
 changeTheme(theme);
 
 //language changing
+// language changing
 let semanticCore = {
     subtitle: {
-        "en": "Forget about all the file sharing services you’ve used before! Quick, high quality, clean, suitable and understandable  solution is just ahead of you!",
+        "en": "Forget about all the file sharing services you’ve used before! Quick, high quality, clean, suitable and understandable solution is just ahead of you!",
         "ukraine": "Забудьте про всі служби обміну файлами, якими ви користувалися раніше! Швидке, якісне, чисте, прийнятне та зрозуміле рішення тільки попереду!",
-        "poland": "",
-        "japan": "",
-        "france": "",
+        "poland": "Zapomnij o wszystkich usługach udostępniania plików, z których korzystałeś wcześniej! Szybkie, wysokiej jakości, czyste, odpowiednie i zrozumiałe rozwiązanie jest tuż przed Tobą!",
+        "japan": "これまで使っていたすべてのファイル共有サービスを忘れてください！迅速、高品質、クリーン、適切でわかりやすいソリューションがすぐ目の前にあります！",
+        "france": "Oubliez tous les services de partage de fichiers que vous avez utilisés auparavant ! Une solution rapide, de haute qualité, propre, adaptée et compréhensible est juste devant vous !"
     },
-    
+    upload: {
+        "en": "Upload a file",
+        "ukraine": "Завантажити файл",
+        "poland": "Prześlij plik",
+        "japan": "ファイルをアップロード",
+        "france": "Télécharger un fichier"
+    },
+    file: {
+        "en": "No file chosen",
+        "ukraine": "Файл не вибрано",
+        "poland": "Nie wybrano pliku",
+        "japan": "ファイルが選択されていません",
+        "france": "Aucun fichier choisi"
+    },
+    uploadFile: {
+        "en": "Upload file",
+        "ukraine": "Завантажити файл",
+        "poland": "Prześlij plik",
+        "japan": "ファイルをアップロード",
+        "france": "Télécharger le fichier"
+    },
+    save: {
+        "en": "Save a file",
+        "ukraine": "Зберегти файл",
+        "poland": "Zapisz plik",
+        "japan": "ファイルを保存",
+        "france": "Enregistrer un fichier"
+    },
+    saveFile: {
+        "en": "Save file",
+        "ukraine": "Зберегти файл",
+        "poland": "Zapisz plik",
+        "japan": "ファイルを保存",
+        "france": "Enregistrer le fichier"
+    },
+    uploadDescription: {
+        "en": "Here you can <span class=\"keyWords uploadForm_keyWords\">upload</span> your files. They will be saved in our database for <span class=\"keyWords uploadForm_keyWords\">one week</span>.",
+        "ukraine": "Тут ви можете <span class=\"keyWords uploadForm_keyWords\">завантажити</span> ваші файли. Вони будуть збережені в нашій базі даних на <span class=\"keyWords uploadForm_keyWords\">один тиждень</span>.",
+        "poland": "Tutaj możesz <span class=\"keyWords uploadForm_keyWords\">przesłać</span> swoje pliki. Zostaną one zapisane w naszej bazie danych na <span class=\"keyWords uploadForm_keyWords\">jeden tydzień</span>.",
+        "japan": "ここにファイルを<span class=\"keyWords uploadForm_keyWords\">アップロード</span>できます。ファイルは<span class=\"keyWords uploadForm_keyWords\">1週間</span>データベースに保存されます。",
+        "france": "Ici, vous pouvez <span class=\"keyWords uploadForm_keyWords\">télécharger</span> vos fichiers. Ils seront enregistrés dans notre base de données pendant <span class=\"keyWords uploadForm_keyWords\">une semaine</span>."
+    },
+    saveDescription: {
+        "en": "Save <span class=\"keyWords\">any file</span> from the database by just entering the 6-number <span class=\"keyWords\">code</span> here!",
+        "ukraine": "Збережіть <span class=\"keyWords\">будь-який файл</span> з бази даних, просто ввівши тут <span class=\"keyWords\">6-значний код</span>!",
+        "poland": "Zapisz <span class=\"keyWords\">dowolny plik</span> z bazy danych, wpisując tutaj <span class=\"keyWords\">6-cyfrowy kod</span>!",
+        "japan": "ここに6桁の<span class=\"keyWords\">コード</span>を入力するだけで、データベースから<span class=\"keyWords\">任意のファイル</span>を保存できます！",
+        "france": "Enregistrez <span class=\"keyWords\">n'importe quel fichier</span> de la base de données en entrant simplement le <span class=\"keyWords\">code</span> à 6 chiffres ici !"
+    }
 };
+
 let allLang = ['en', 'ukraine', 'poland', 'japan', 'france'];
 let lang = localStorage.getItem('lang') || 'en';
+
 function updateLanguage() {
     for (let key in semanticCore) {
-        document.querySelector('.language-' + key).innerText = semanticCore[key][lang];
+        if (document.querySelector('.language-' + key)) {
+            document.querySelector('.language-' + key).innerHTML = semanticCore[key][lang];
+        }
     }
 }
+
 function changeLanguage() {
     let hash = (window.location.hash).substring(1);
 
@@ -306,8 +360,8 @@ function changeLanguage() {
 
     updateLanguage();
     $('#languageChanger').val(lang);
-
 }
+
 $('#languageChanger').change(function() {
     let selectedValue = $(this).val();
     $('#languageChanger').val(lang);
@@ -336,5 +390,6 @@ $('#languageChanger').change(function() {
 
     location.href = window.location.pathname + '#' + lang;
 });
+
 changeLanguage();
 window.onhashchange = changeLanguage;
