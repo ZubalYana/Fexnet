@@ -276,7 +276,6 @@ function changeTheme(theme){
 changeTheme(theme);
 
 //language changing
-// language changing
 let semanticCore = {
     subtitle: {
         "en": "Forget about all the file sharing services you’ve used before! Quick, high quality, clean, suitable and understandable solution is just ahead of you!",
@@ -335,10 +334,8 @@ let semanticCore = {
         "france": "Enregistrez <span class=\"keyWords\">n'importe quel fichier</span> de la base de données en entrant simplement le <span class=\"keyWords\">code</span> à 6 chiffres ici !"
     }
 };
-
 let allLang = ['en', 'ukraine', 'poland', 'japan', 'france'];
 let lang = localStorage.getItem('lang') || 'en';
-
 function updateLanguage() {
     for (let key in semanticCore) {
         if (document.querySelector('.language-' + key)) {
@@ -346,7 +343,6 @@ function updateLanguage() {
         }
     }
 }
-
 function changeLanguage() {
     let hash = (window.location.hash).substring(1);
 
@@ -361,7 +357,6 @@ function changeLanguage() {
     updateLanguage();
     $('#languageChanger').val(lang);
 }
-
 $('#languageChanger').change(function() {
     let selectedValue = $(this).val();
     $('#languageChanger').val(lang);
@@ -390,6 +385,5 @@ $('#languageChanger').change(function() {
 
     location.href = window.location.pathname + '#' + lang;
 });
-
 changeLanguage();
 window.onhashchange = changeLanguage;
