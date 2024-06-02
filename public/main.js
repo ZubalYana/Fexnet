@@ -274,3 +274,66 @@ function changeTheme(theme){
     }
 }
 changeTheme(theme);
+
+//language changing
+let semanticCore = {
+    subtitle: {
+        "en": "Forget about all the file sharing services you’ve used before! Quick, high quality, clean, suitable and understandable  solution is just ahead of you!",
+        "ukraine": "Забудьте про всі служби обміну файлами, якими ви користувалися раніше! Швидке, якісне, чисте, прийнятне та зрозуміле рішення тільки попереду!",
+        "poland": "",
+        "japan": "",
+        "france": "",
+    },
+    
+};
+let allLang = ['en', 'ukraine', 'poland', 'japan', 'france'];
+let lang = localStorage.getItem('lang') || 'en';
+function updateLanguage() {
+    for (let key in semanticCore) {
+        document.querySelector('.language-' + key).innerText = semanticCore[key][lang];
+    }
+}
+function changeLanguage() {
+    let hash = (window.location.hash).substring(1);
+
+    if (!allLang.includes(hash)) {
+        hash = 'en';
+        location.href = window.location.pathname + '#en';
+    }
+
+    lang = hash;
+    localStorage.setItem('lang', lang); 
+
+    updateLanguage();
+
+}
+$('#languageChanger').change(function() {
+    let selectedValue = $(this).val();
+    $('#languageChanger').val(lang);
+    switch (selectedValue) {
+        case 'en':
+            lang = 'en';
+            break;
+        case 'Ukr':
+            lang = 'ukraine';
+            break;
+        case 'Jap':
+            lang = 'japan';
+            break;
+        case 'Fr':
+            lang = 'france';
+            break;
+        case 'Pol':
+            lang = 'poland';
+            break;
+        default:
+            lang = 'en'; 
+    }
+
+    localStorage.setItem('lang', lang);
+    updateLanguage(); 
+
+    location.href = window.location.pathname + '#' + lang;
+});
+changeLanguage();
+window.onhashchange = changeLanguage;
