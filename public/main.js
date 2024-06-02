@@ -74,6 +74,7 @@ function changeTheme(theme){
         $('.wrap').css('background-color', '#fff')
         $('select').css('background-color', '#fff')
         $('select').css('color', '#332C39')
+        $('option').css('color', '#332C39')
         $('.logo').css('color', '#332C39')
         $('.title').css('color', '#332C39')
         $('.subtitle').css('color', '#332C39')
@@ -176,6 +177,8 @@ function changeTheme(theme){
         $('.wrap').css('background-color', '#332C39')
         $('select').css('background-color', '#332C39')
         $('select').css('color', '#fff')
+        $('option').css('color', '#fff')
+
         $('.logo').css('color', '#fff')
         $('.title').css('color', '#fff')
         $('.subtitle').css('color', '#fff')
