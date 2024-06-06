@@ -399,3 +399,12 @@ window.onhashchange = changeLanguage;
 //files in the database amount displaying
 const filesAmount = File.length; 
 $('.amount_number').html(filesAmount)
+
+
+// function amountDisplaying(){
+//     const filesAmount = 0;
+//     for(let el of File){
+//         filesAmount += el;
+//     }
+//     $('.amount_number').html(filesAmount)
+// }
