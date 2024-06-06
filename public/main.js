@@ -392,7 +392,7 @@ $('#languageChanger').change(function() {
 
     localStorage.setItem('lang', lang);
     updateLanguage(); 
-
+    displayFilesAmount();
     location.href = window.location.pathname + '#' + lang;
 });
 changeLanguage();
