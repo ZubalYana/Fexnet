@@ -334,12 +334,14 @@ let semanticCore = {
         "france": "Ici, vous pouvez <span class=\"keyWords uploadForm_keyWords\">télécharger</span> vos fichiers. Ils seront enregistrés dans notre base de données pendant <span class=\"keyWords uploadForm_keyWords\">une semaine</span>."
     },
     saveDescription: {
-        "en": "Save <span class=\"keyWords\">any file</span> from the database which already has <span class=\"keyWords\"><div class=\"amount_number\"></div></span> files saved!",
-        "ukraine": "Збережіть <span class=\"keyWords\">будь-який файл</span> з бази даних, яка вже має <span class=\"keyWords\"><div class=\"amount_number\"></div></span> збережених файлів!",
-        "poland": "Zapisz <span class=\"keyWords\">dowolny plik</span> z bazy danych, która już zawiera <span class=\"keyWords\"><div class=\"amount_number\"></div></span> zapisanych plików!",
-        "japan": "データベースに保存された<span class=\"keyWords\"><div class=\"amount_number keyWords\"></div></span>個のファイルから<span class=\"keyWords\">任意のファイル</span>を保存してください。",
-        "france": "Enregistrez <span class=\"keyWords\">n'importe quel fichier</span> de la base de données qui contient déjà <span class=\"keyWords\"><div class=\"amount_number\"></div></span> fichiers enregistrés !"
+        "en": "Save <span class=\"keyWords\">any file</span> from the database which already has <span class=\"keyWords amount_number\"></span> files saved!",
+        "ukraine": "Збережіть <span class=\"keyWords\">будь-який файл</span> з бази даних, в якій вже збережено <span class=\"keyWords amount_number\"></span> файлів!",
+        "poland": "Zapisz <span class=\"keyWords\">dowolny plik</span> z bazy danych, która ma już zapisane <span class=\"keyWords amount_number\"></span> plików!",
+        "japan": "すでに<span class=\"keyWords amount_number\"></span>個のファイルが保存されているデータベースから<span class=\"keyWords\">任意のファイル</span>を保存します！",
+        "france": "Enregistrez <span class=\"keyWords\">n'importe quel fichier</span> de la base de données qui contient déjà <span class=\"keyWords amount_number\"></span> fichiers sauvegardés !"
     }
+    
+    
     
 };
 let allLang = ['en', 'ukraine', 'poland', 'japan', 'france'];
