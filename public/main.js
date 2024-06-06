@@ -394,3 +394,8 @@ $('#languageChanger').change(function() {
 });
 changeLanguage();
 window.onhashchange = changeLanguage;
+
+
+//files in the database amount displaying
+const filesAmount = File.length; 
+$('.amount_number').html(filesAmount)
