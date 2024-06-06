@@ -104,6 +104,9 @@
   font-weight: 300;
   margin-top: 18px;
 }
+.wrap .info .amount {
+  display: flex;
+}
 .wrap .forms {
   width: 1100px;
   display: flex;
