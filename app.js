@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const fileRoutes = require('./routes/fileroutes');
 const path = require('path');
+const File = require('./models/fileModel');
 
 dotenv.config();
 
@@ -20,7 +21,23 @@ app.use('/uploads', express.static('uploads'));
 app.use('/api', fileRoutes);
 app.use(express.static('public'));
 
-const port = process.env.PORT || 3000;
-app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
+
+
+app.get('/file-count', async (req, res) => {
+    try {
+        const filesAmount = await File.countDocuments();
+        res.json({ count: filesAmount });
+    } catch (error) {
+        res.status(500).json({ error: 'Error fetching file count' });
+    }
 });
+
+// Other routes and middleware
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
+
+
+

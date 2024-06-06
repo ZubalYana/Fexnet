@@ -396,15 +396,19 @@ changeLanguage();
 window.onhashchange = changeLanguage;
 
 
-//files in the database amount displaying
-const filesAmount = File.length; 
-$('.amount_number').html(filesAmount)
+// Function to fetch the file count from the server and display it
+const displayFilesAmount = async () => {
+    try {
+        const response = await fetch('/file-count');
+        const data = await response.json();
+        $('.amount_number').html(data.count);
+    } catch (error) {
+        console.error('Error fetching file count:', error);
+        $('.amount_number').html('Error');
+    }
+};
+
+// Call the function to display the file count
+displayFilesAmount();
 
 
-// function amountDisplaying(){
-//     const filesAmount = 0;
-//     for(let el of File){
-//         filesAmount += el;
-//     }
-//     $('.amount_number').html(filesAmount)
-// }
