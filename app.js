@@ -21,8 +21,6 @@ app.use('/uploads', express.static('uploads'));
 app.use('/api', fileRoutes);
 app.use(express.static('public'));
 
-
-
 app.get('/file-count', async (req, res) => {
     try {
         const filesAmount = await File.countDocuments();
@@ -32,7 +30,6 @@ app.get('/file-count', async (req, res) => {
     }
 });
 
-// Other routes and middleware
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {

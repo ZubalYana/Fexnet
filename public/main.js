@@ -395,8 +395,7 @@ $('#languageChanger').change(function() {
 changeLanguage();
 window.onhashchange = changeLanguage;
 
-
-// Function to fetch the file count from the server and display it
+//display the amount of the files in the database
 const displayFilesAmount = async () => {
     try {
         const response = await fetch('/file-count');
@@ -408,7 +407,4 @@ const displayFilesAmount = async () => {
     }
 };
 
-// Call the function to display the file count
 displayFilesAmount();
-
-
