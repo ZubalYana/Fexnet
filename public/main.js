@@ -23,7 +23,8 @@ document.getElementById('uploadForm').addEventListener('submit', async (e) => {
         const res = await axios.post('/api/upload', formData);
         console.log(res);
         const message = res.data.message;
-        document.getElementById('UploadMessage').innerHTML = `File uploaded successfully, code:${message}`;
+        document.getElementById('UploadMessage').innerHTML = `File uploaded successfully, code:<button class="copy-btn" data-clipboard-text="${message}">${message}</button>
+`;
     } catch (error) {
         console.error('Error uploading file', error);
         document.getElementById('UploadMessage').innerText = 'Error uploading file';
